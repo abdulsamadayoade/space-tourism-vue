@@ -8,7 +8,7 @@
           WANT
           TO TRAVEL TO</p>
         <h1 class="text-cWhite text-[80px] my-5 font-bellefair uppercase font-normal leading-[100px]">Space</h1>
-        <p class="text-cLightBlue font-barlow text-[15px]">
+        <p class="text-cLightBlue font-barlow text-[15px] sm:text-base">
           Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of
           on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
         </p>

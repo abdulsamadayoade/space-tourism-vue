@@ -1,21 +1,21 @@
 <script setup></script>
 
 <template>
-  <section class="home h-screen w-full py-20 px-5">
-    <div class="flex flex-col justify-between h-full">
+  <section class="home min-h-screen w-full py-20 px-5">
+    <div class="flex flex-col justify-between min-h-screen space-y-3 md:space-y-8">
       <div class="text-center">
-        <p class="text-base uppercase text-cLightBlue font-barlow-condensed leading-[19px] tracking-[2.7px]">SO, YOU
+        <p class="text-base uppercase text-cLightBlue font-barlow-condensed leading-[19px] tracking-[2.7px] md:text-[20px] md:tracking-[3.38px]">SO, YOU
           WANT
           TO TRAVEL TO</p>
-        <h1 class="text-cWhite text-[80px] my-5 font-bellefair uppercase font-normal leading-[100px]">Space</h1>
-        <p class="text-cLightBlue font-barlow text-[15px] sm:text-base">
+        <h1 class="text-cWhite text-[80px] my-5 font-bellefair uppercase font-normal leading-[100px] md:text-[150px] md:leading-[150px] md:my-8">Space</h1>
+        <p class="text-cLightBlue font-barlow text-[15px] sm:text-base max-w-[445px] mx-auto md:leading-[28px]">
           Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of
           on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
         </p>
       </div>
 
       <div class="flex items-center justify-center">
-        <button class="explore-btn h-[250px] w-[250px] relative"></button>
+        <button class="explore-btn h-[250px] w-[250px] md:w-[300px] md:h-[300px] relative"></button>
       </div>
     </div>
   </section>
@@ -66,5 +66,21 @@
   font-weight: 400;
   color: #0B0D17;
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .explore-btn::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .explore-btn::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+  }
 }
 </style>

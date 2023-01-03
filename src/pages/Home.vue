@@ -2,8 +2,8 @@
 
 <template>
   <section class="home min-h-screen w-full py-20 px-5">
-    <div class="flex flex-col justify-between min-h-screen space-y-3 md:space-y-8">
-      <div class="text-center">
+    <div class="flex flex-col justify-between min-h-screen space-y-3 md:space-y-8 lg:flex-row lg:items-end lg:max-w-[1200px] lg:mx-auto">
+      <div class="text-center lg:text-left">
         <p class="text-base uppercase text-cLightBlue font-barlow-condensed leading-[19px] tracking-[2.7px] md:text-[20px] md:tracking-[3.38px]">SO, YOU
           WANT
           TO TRAVEL TO</p>
@@ -81,6 +81,12 @@
 
   .home {
     background-image: url('../assets/home/background-home-tablet.jpg');
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
   }
 }
 </style>
